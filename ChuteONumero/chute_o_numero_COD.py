@@ -9,5 +9,7 @@ while acerto == False:
     if tentativa == resposta:
         print("Parabéns, você acertou!! ")
         acerto = True
-    else:
-        print("Errou! Tente novamente")
+    elif tentativa < resposta:
+        print("Chute um valor mais alto!")
+    elif tentativa > resposta:
+        print("Chute um valor mais baixo! ")
